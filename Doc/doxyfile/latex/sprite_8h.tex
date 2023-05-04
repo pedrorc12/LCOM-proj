@@ -1,0 +1,76 @@
+\hypertarget{sprite_8h}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/sprite.h File Reference}
+\label{sprite_8h}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/sprite.h@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/sprite.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video.\+h\char`\"{}}\newline
+Include dependency graph for sprite.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gab67f095900ba6092fed7f581886f28c6}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y, int xspeed, int yspeed)
+\item 
+int \mbox{\hyperlink{group__sprite_gab2de76a7d168882434343bd1a3a6d69d}{animate\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig, char $\ast$base)
+\item 
+void \mbox{\hyperlink{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{group__sprite_ga5c0da2e39973a2e7103cc833bb5b827f}{move\+\_\+cursor}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig, int xstep, int ystep, char $\ast$base)
+\item 
+void \mbox{\hyperlink{sprite_8h_a56ed7269b72333472c0a2197dc4daf38}{clear\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8h_aaa2c79a7835e7571f2dbe424bf0994c3}{move\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8h_aeded1e430e2e6b3ec749fd9e2d5ead39}{clear\+\_\+sprite\+\_\+old}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8h_a3d385ca0396c4c2b3001371505a410e4}{draw\+\_\+background}} ()
+\item 
+void \mbox{\hyperlink{sprite_8h_a2dd17cef31990225bd70cb2e68260249}{create\+\_\+background}} (xpm\+\_\+map\+\_\+t xpm)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sprite_8h_a56ed7269b72333472c0a2197dc4daf38}\label{sprite_8h_a56ed7269b72333472c0a2197dc4daf38}} 
+\index{sprite.h@{sprite.h}!clear\_sprite@{clear\_sprite}}
+\index{clear\_sprite@{clear\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{clear\_sprite()}{clear\_sprite()}}
+{\footnotesize\ttfamily void clear\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+Draw background in the old position setted in draw sprite \mbox{\Hypertarget{sprite_8h_aeded1e430e2e6b3ec749fd9e2d5ead39}\label{sprite_8h_aeded1e430e2e6b3ec749fd9e2d5ead39}} 
+\index{sprite.h@{sprite.h}!clear\_sprite\_old@{clear\_sprite\_old}}
+\index{clear\_sprite\_old@{clear\_sprite\_old}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{clear\_sprite\_old()}{clear\_sprite\_old()}}
+{\footnotesize\ttfamily void clear\+\_\+sprite\+\_\+old (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8h_a2dd17cef31990225bd70cb2e68260249}\label{sprite_8h_a2dd17cef31990225bd70cb2e68260249}} 
+\index{sprite.h@{sprite.h}!create\_background@{create\_background}}
+\index{create\_background@{create\_background}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{create\_background()}{create\_background()}}
+{\footnotesize\ttfamily void create\+\_\+background (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8h_a3d385ca0396c4c2b3001371505a410e4}\label{sprite_8h_a3d385ca0396c4c2b3001371505a410e4}} 
+\index{sprite.h@{sprite.h}!draw\_background@{draw\_background}}
+\index{draw\_background@{draw\_background}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_background()}{draw\_background()}}
+{\footnotesize\ttfamily void draw\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}\label{sprite_8h_a740994f8c16c38bf18eaabac1f5eeeb9}} 
+\index{sprite.h@{sprite.h}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily void draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+Draw sprite in sp.\+x and sp.\+y position \mbox{\Hypertarget{sprite_8h_aaa2c79a7835e7571f2dbe424bf0994c3}\label{sprite_8h_aaa2c79a7835e7571f2dbe424bf0994c3}} 
+\index{sprite.h@{sprite.h}!move\_sprite@{move\_sprite}}
+\index{move\_sprite@{move\_sprite}!sprite.h@{sprite.h}}
+\doxysubsubsection{\texorpdfstring{move\_sprite()}{move\_sprite()}}
+{\footnotesize\ttfamily void move\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+draw a new sprite at position x and y while clearing the old position 

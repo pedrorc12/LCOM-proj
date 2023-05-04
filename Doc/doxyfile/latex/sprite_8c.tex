@@ -1,0 +1,93 @@
+\hypertarget{sprite_8c}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/sprite.c File Reference}
+\label{sprite_8c}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/sprite.c@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/sprite.c}}
+{\ttfamily \#include \char`\"{}sprite.\+h\char`\"{}}\newline
+Include dependency graph for sprite.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gab67f095900ba6092fed7f581886f28c6}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y, int xspeed, int yspeed)
+\item 
+void \mbox{\hyperlink{sprite_8c_a2dd17cef31990225bd70cb2e68260249}{create\+\_\+background}} (xpm\+\_\+map\+\_\+t xpm)
+\item 
+void \mbox{\hyperlink{sprite_8c_a740994f8c16c38bf18eaabac1f5eeeb9}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8c_a3d385ca0396c4c2b3001371505a410e4}{draw\+\_\+background}} ()
+\item 
+void \mbox{\hyperlink{sprite_8c_a56ed7269b72333472c0a2197dc4daf38}{clear\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8c_aeded1e430e2e6b3ec749fd9e2d5ead39}{clear\+\_\+sprite\+\_\+old}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{sprite_8c_aaa2c79a7835e7571f2dbe424bf0994c3}{move\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{sprite_8c_abc3c784566289e1414929d23e32a0c6c}{hres}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{sprite_8c_a573eca15e5986d6dd7ae53b5dab582e2}{vres}}
+\item 
+bool \mbox{\hyperlink{sprite_8c_ad8477346010955a24043cbe3bcfc8367}{page}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{sprite_8c_a56ed7269b72333472c0a2197dc4daf38}\label{sprite_8c_a56ed7269b72333472c0a2197dc4daf38}} 
+\index{sprite.c@{sprite.c}!clear\_sprite@{clear\_sprite}}
+\index{clear\_sprite@{clear\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{clear\_sprite()}{clear\_sprite()}}
+{\footnotesize\ttfamily void clear\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+Draw background in the old position setted in draw sprite \mbox{\Hypertarget{sprite_8c_aeded1e430e2e6b3ec749fd9e2d5ead39}\label{sprite_8c_aeded1e430e2e6b3ec749fd9e2d5ead39}} 
+\index{sprite.c@{sprite.c}!clear\_sprite\_old@{clear\_sprite\_old}}
+\index{clear\_sprite\_old@{clear\_sprite\_old}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{clear\_sprite\_old()}{clear\_sprite\_old()}}
+{\footnotesize\ttfamily void clear\+\_\+sprite\+\_\+old (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8c_a2dd17cef31990225bd70cb2e68260249}\label{sprite_8c_a2dd17cef31990225bd70cb2e68260249}} 
+\index{sprite.c@{sprite.c}!create\_background@{create\_background}}
+\index{create\_background@{create\_background}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{create\_background()}{create\_background()}}
+{\footnotesize\ttfamily void create\+\_\+background (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8c_a3d385ca0396c4c2b3001371505a410e4}\label{sprite_8c_a3d385ca0396c4c2b3001371505a410e4}} 
+\index{sprite.c@{sprite.c}!draw\_background@{draw\_background}}
+\index{draw\_background@{draw\_background}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{draw\_background()}{draw\_background()}}
+{\footnotesize\ttfamily void draw\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{sprite_8c_a740994f8c16c38bf18eaabac1f5eeeb9}\label{sprite_8c_a740994f8c16c38bf18eaabac1f5eeeb9}} 
+\index{sprite.c@{sprite.c}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily void draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+Draw sprite in sp.\+x and sp.\+y position \mbox{\Hypertarget{sprite_8c_aaa2c79a7835e7571f2dbe424bf0994c3}\label{sprite_8c_aaa2c79a7835e7571f2dbe424bf0994c3}} 
+\index{sprite.c@{sprite.c}!move\_sprite@{move\_sprite}}
+\index{move\_sprite@{move\_sprite}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{move\_sprite()}{move\_sprite()}}
+{\footnotesize\ttfamily void move\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+draw a new sprite at position x and y while clearing the old position 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{sprite_8c_abc3c784566289e1414929d23e32a0c6c}\label{sprite_8c_abc3c784566289e1414929d23e32a0c6c}} 
+\index{sprite.c@{sprite.c}!hres@{hres}}
+\index{hres@{hres}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{hres}{hres}}
+{\footnotesize\ttfamily uint16\+\_\+t hres\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{sprite_8c_ad8477346010955a24043cbe3bcfc8367}\label{sprite_8c_ad8477346010955a24043cbe3bcfc8367}} 
+\index{sprite.c@{sprite.c}!page@{page}}
+\index{page@{page}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{page}{page}}
+{\footnotesize\ttfamily bool page\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{sprite_8c_a573eca15e5986d6dd7ae53b5dab582e2}\label{sprite_8c_a573eca15e5986d6dd7ae53b5dab582e2}} 
+\index{sprite.c@{sprite.c}!vres@{vres}}
+\index{vres@{vres}!sprite.c@{sprite.c}}
+\doxysubsubsection{\texorpdfstring{vres}{vres}}
+{\footnotesize\ttfamily uint16\+\_\+t vres\hspace{0.3cm}{\ttfamily [extern]}}
+

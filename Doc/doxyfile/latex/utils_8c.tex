@@ -1,0 +1,46 @@
+\hypertarget{utils_8c}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/utils.c File Reference}
+\label{utils_8c}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/utils.c@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/utils.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for utils.\+c\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{utils_8c_a81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+LSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\item 
+int() \mbox{\hyperlink{utils_8c_a6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+MSB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\item 
+int() \mbox{\hyperlink{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{utils_8c_a9b462f0c76c8ee8930d3d33dfb4803d8}{util\+\_\+get\+\_\+byte}} (int which\+\_\+byte, uint32\+\_\+t word)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8c_a9b462f0c76c8ee8930d3d33dfb4803d8}\label{utils_8c_a9b462f0c76c8ee8930d3d33dfb4803d8}} 
+\index{utils.c@{utils.c}!util\_get\_byte@{util\_get\_byte}}
+\index{util\_get\_byte@{util\_get\_byte}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_byte()}{util\_get\_byte()}}
+{\footnotesize\ttfamily uint8\+\_\+t util\+\_\+get\+\_\+byte (\begin{DoxyParamCaption}\item[{int}]{which\+\_\+byte,  }\item[{uint32\+\_\+t}]{word }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8c_a81621440b3d65680979425e39aa8c789}\label{utils_8c_a81621440b3d65680979425e39aa8c789}} 
+\index{utils.c@{utils.c}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+LSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8c_a6a880076cd2ec468834438b6e0c58836}\label{utils_8c_a6a880076cd2ec468834438b6e0c58836}} 
+\index{utils.c@{utils.c}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+MSB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}\label{utils_8c_a79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils.c@{utils.c}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils.c@{utils.c}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+

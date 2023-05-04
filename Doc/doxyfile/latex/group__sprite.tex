@@ -1,0 +1,53 @@
+\hypertarget{group__sprite}{}\doxysection{Sprite}
+\label{group__sprite}\index{Sprite@{Sprite}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gab67f095900ba6092fed7f581886f28c6}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t xpm, int x, int y, int xspeed, int yspeed)
+\item 
+int \mbox{\hyperlink{group__sprite_gab2de76a7d168882434343bd1a3a6d69d}{animate\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig, char $\ast$base)
+\item 
+void \mbox{\hyperlink{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\item 
+void \mbox{\hyperlink{group__sprite_ga5c0da2e39973a2e7103cc833bb5b827f}{move\+\_\+cursor}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$fig, int xstep, int ystep, char $\ast$base)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joao Cardoso (\href{mailto:jcard@fe.up.pt}{\texttt{ jcard@fe.\+up.\+pt}}) ???? Added by \href{mailto:pfs@fe.up.pt}{\texttt{ pfs@fe.\+up.\+pt}}
+\end{DoxyAuthor}
+\mbox{\hyperlink{struct_sprite}{Sprite}} related functions 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__sprite_gab2de76a7d168882434343bd1a3a6d69d}\label{group__sprite_gab2de76a7d168882434343bd1a3a6d69d}} 
+\index{Sprite@{Sprite}!animate\_sprite@{animate\_sprite}}
+\index{animate\_sprite@{animate\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{animate\_sprite()}{animate\_sprite()}}
+{\footnotesize\ttfamily int animate\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{fig,  }\item[{char $\ast$}]{base }\end{DoxyParamCaption})}
+
+Animate the sprite \char`\"{}fig\char`\"{} according to its attributes in memory, whose address is \char`\"{}base\char`\"{}. The animation detects the screen borders and change the speed according; it also detects collision with other objects, including the player pad. Collisions with the screen border generates a perfect reflection, while collision with other objects generates a random perturbation in the object speed. Other strategies can be devised\+: use quasi-\/elastic collision based on the objects \char`\"{}mass\char`\"{} and speed, generate spin effect based on amount of tangential speed direction relative to the object center of \char`\"{}mass\char`\"{}... Returns the kind of collision detected, RIGHT\+\_\+\+HIT or LEFT\+\_\+\+HIT, if a collision with the players pad (WHITE colored!) is detected. \mbox{\Hypertarget{group__sprite_gab67f095900ba6092fed7f581886f28c6}\label{group__sprite_gab67f095900ba6092fed7f581886f28c6}} 
+\index{Sprite@{Sprite}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{xspeed,  }\item[{int}]{yspeed }\end{DoxyParamCaption})}
+
+Creates with random speeds (not zero) and position (within the screen limits), a new sprite with pixmap \char`\"{}pic\char`\"{}, in memory whose address is \char`\"{}base\char`\"{}; Returns NULL on invalid pixmap. \mbox{\Hypertarget{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}\label{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}} 
+\index{Sprite@{Sprite}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+The \char`\"{}fig\char`\"{} sprite is erased from memory whose address is \char`\"{}base\char`\"{} and used resources released. \mbox{\Hypertarget{group__sprite_ga5c0da2e39973a2e7103cc833bb5b827f}\label{group__sprite_ga5c0da2e39973a2e7103cc833bb5b827f}} 
+\index{Sprite@{Sprite}!move\_cursor@{move\_cursor}}
+\index{move\_cursor@{move\_cursor}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_cursor()}{move\_cursor()}}
+{\footnotesize\ttfamily void move\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{fig,  }\item[{int}]{xstep,  }\item[{int}]{ystep,  }\item[{char $\ast$}]{base }\end{DoxyParamCaption})}
+
+Move in memory whose address is \textquotesingle{}base\textquotesingle{}, the \textquotesingle{}fig\textquotesingle{} cursor, a standard sprite, from its current position to a new position \textquotesingle{}xstep\textquotesingle{} and \textquotesingle{}ystep\textquotesingle{} away. ~\newline
+ The cursor is erased from its present position in xor-\/mode and draw in the new position also oin xor-\/mode. The first time this function is called it only draws the cursor at the current position. 

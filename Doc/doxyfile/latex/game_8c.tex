@@ -1,0 +1,174 @@
+\hypertarget{game_8c}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/game.c File Reference}
+\label{game_8c}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/game.c@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/game.c}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_a4568e6c1e134e03eff8344ab11c9d3f4}{subscribe\+\_\+interrupts}} (uint16\+\_\+t mode)
+\item 
+void \mbox{\hyperlink{game_8c_a3d0fec1f7ca86549a60f72073fcd75bc}{game\+\_\+initialize}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a000200ff0124bb2c9ee91e4c983f76fa}{game\+\_\+restart}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a8f7acda4de2ff9ede5fca68d2db09959}{draw\+\_\+frame}} ()
+\item 
+bool \mbox{\hyperlink{game_8c_aab7cd3ffef2b532675e743bede74101d}{verify\+\_\+collision}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a7b6e8145979059899cec55e561556c64}{main\+\_\+menu\+\_\+initialize}} ()
+\item 
+void \mbox{\hyperlink{game_8c_a83361e027b6f0dd917305f1f82dedda3}{draw\+\_\+main\+\_\+menu}} ()
+\item 
+int \mbox{\hyperlink{game_8c_a315e950a7e6bb500fe11c37ee1122577}{game\+\_\+main\+\_\+loop}} ()
+\item 
+int \mbox{\hyperlink{game_8c_a32e114bbaf9363e27da61428abab6e6b}{game\+\_\+end}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{game_8c_a51322ddb267b4729d6b5f2bb05d49fff}{counter}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{game_8c_a573eca15e5986d6dd7ae53b5dab582e2}{vres}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{game_8c_abc3c784566289e1414929d23e32a0c6c}{hres}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a440d18db810073ee49ac305782b1f2ff}{timer\+\_\+irq}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a59b76c220e99d206db2933297f5828dd}{kbc\+\_\+irq}} = 1
+\item 
+int \mbox{\hyperlink{game_8c_a6cf45143256e325950f86d094f083704}{plataforms\+\_\+counter}} = 0
+\item 
+\mbox{\hyperlink{struct_game}{Game}} \mbox{\hyperlink{game_8c_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}}
+\item 
+\mbox{\hyperlink{struct_pause}{Pause}} \mbox{\hyperlink{game_8c_a30c1af62a69019397011f941b9a63cce}{pause\+\_\+menu}}
+\item 
+\mbox{\hyperlink{struct_pause}{Pause}} \mbox{\hyperlink{game_8c_aaeeac0349d7d3f2acebfc0a19b7e68ec}{game\+\_\+over\+\_\+menu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_a8f7acda4de2ff9ede5fca68d2db09959}\label{game_8c_a8f7acda4de2ff9ede5fca68d2db09959}} 
+\index{game.c@{game.c}!draw\_frame@{draw\_frame}}
+\index{draw\_frame@{draw\_frame}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{draw\_frame()}{draw\_frame()}}
+{\footnotesize\ttfamily void draw\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draw a frame, uptdating sprites positions, verifying colisions and updating the UI for the menus \mbox{\Hypertarget{game_8c_a83361e027b6f0dd917305f1f82dedda3}\label{game_8c_a83361e027b6f0dd917305f1f82dedda3}} 
+\index{game.c@{game.c}!draw\_main\_menu@{draw\_main\_menu}}
+\index{draw\_main\_menu@{draw\_main\_menu}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{draw\_main\_menu()}{draw\_main\_menu()}}
+{\footnotesize\ttfamily void draw\+\_\+main\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draw the main menu with the UI updates \mbox{\Hypertarget{game_8c_a32e114bbaf9363e27da61428abab6e6b}\label{game_8c_a32e114bbaf9363e27da61428abab6e6b}} 
+\index{game.c@{game.c}!game\_end@{game\_end}}
+\index{game\_end@{game\_end}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_end()}{game\_end()}}
+{\footnotesize\ttfamily int game\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribe IRQ and go back to text mode \mbox{\Hypertarget{game_8c_a3d0fec1f7ca86549a60f72073fcd75bc}\label{game_8c_a3d0fec1f7ca86549a60f72073fcd75bc}} 
+\index{game.c@{game.c}!game\_initialize@{game\_initialize}}
+\index{game\_initialize@{game\_initialize}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_initialize()}{game\_initialize()}}
+{\footnotesize\ttfamily void game\+\_\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initialize the Sprites and menus inside de game \mbox{\Hypertarget{game_8c_a315e950a7e6bb500fe11c37ee1122577}\label{game_8c_a315e950a7e6bb500fe11c37ee1122577}} 
+\index{game.c@{game.c}!game\_main\_loop@{game\_main\_loop}}
+\index{game\_main\_loop@{game\_main\_loop}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_main\_loop()}{game\_main\_loop()}}
+{\footnotesize\ttfamily int game\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Main loop where driver receive and process the interrupts \mbox{\Hypertarget{game_8c_a000200ff0124bb2c9ee91e4c983f76fa}\label{game_8c_a000200ff0124bb2c9ee91e4c983f76fa}} 
+\index{game.c@{game.c}!game\_restart@{game\_restart}}
+\index{game\_restart@{game\_restart}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_restart()}{game\_restart()}}
+{\footnotesize\ttfamily void game\+\_\+restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_a7b6e8145979059899cec55e561556c64}\label{game_8c_a7b6e8145979059899cec55e561556c64}} 
+\index{game.c@{game.c}!main\_menu\_initialize@{main\_menu\_initialize}}
+\index{main\_menu\_initialize@{main\_menu\_initialize}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{main\_menu\_initialize()}{main\_menu\_initialize()}}
+{\footnotesize\ttfamily void main\+\_\+menu\+\_\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initalize menus for the main menu \mbox{\Hypertarget{game_8c_a4568e6c1e134e03eff8344ab11c9d3f4}\label{game_8c_a4568e6c1e134e03eff8344ab11c9d3f4}} 
+\index{game.c@{game.c}!subscribe\_interrupts@{subscribe\_interrupts}}
+\index{subscribe\_interrupts@{subscribe\_interrupts}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{subscribe\_interrupts()}{subscribe\_interrupts()}}
+{\footnotesize\ttfamily int subscribe\+\_\+interrupts (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+Subscribe to the IRQ\textquotesingle{}s and initialize graphics card in mode, return 0 if succeed 
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode to initalize grapics card \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8c_aab7cd3ffef2b532675e743bede74101d}\label{game_8c_aab7cd3ffef2b532675e743bede74101d}} 
+\index{game.c@{game.c}!verify\_collision@{verify\_collision}}
+\index{verify\_collision@{verify\_collision}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{verify\_collision()}{verify\_collision()}}
+{\footnotesize\ttfamily bool verify\+\_\+collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return true if ther is a collision between de obstacles and doodler 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_a51322ddb267b4729d6b5f2bb05d49fff}\label{game_8c_a51322ddb267b4729d6b5f2bb05d49fff}} 
+\index{game.c@{game.c}!counter@{counter}}
+\index{counter@{counter}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily uint32\+\_\+t counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{game_8c_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{game.c@{game.c}!game@{game}}
+\index{game@{game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_game}{Game}} game}
+
+\mbox{\Hypertarget{game_8c_aaeeac0349d7d3f2acebfc0a19b7e68ec}\label{game_8c_aaeeac0349d7d3f2acebfc0a19b7e68ec}} 
+\index{game.c@{game.c}!game\_over\_menu@{game\_over\_menu}}
+\index{game\_over\_menu@{game\_over\_menu}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_over\_menu}{game\_over\_menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_pause}{Pause}} game\+\_\+over\+\_\+menu}
+
+\mbox{\Hypertarget{game_8c_abc3c784566289e1414929d23e32a0c6c}\label{game_8c_abc3c784566289e1414929d23e32a0c6c}} 
+\index{game.c@{game.c}!hres@{hres}}
+\index{hres@{hres}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{hres}{hres}}
+{\footnotesize\ttfamily uint16\+\_\+t hres\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_a59b76c220e99d206db2933297f5828dd}\label{game_8c_a59b76c220e99d206db2933297f5828dd}} 
+\index{game.c@{game.c}!kbc\_irq@{kbc\_irq}}
+\index{kbc\_irq@{kbc\_irq}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_irq}{kbc\_irq}}
+{\footnotesize\ttfamily uint8\+\_\+t kbc\+\_\+irq = 1}
+
+\mbox{\Hypertarget{game_8c_a30c1af62a69019397011f941b9a63cce}\label{game_8c_a30c1af62a69019397011f941b9a63cce}} 
+\index{game.c@{game.c}!pause\_menu@{pause\_menu}}
+\index{pause\_menu@{pause\_menu}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pause\_menu}{pause\_menu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_pause}{Pause}} pause\+\_\+menu}
+
+\mbox{\Hypertarget{game_8c_a6cf45143256e325950f86d094f083704}\label{game_8c_a6cf45143256e325950f86d094f083704}} 
+\index{game.c@{game.c}!plataforms\_counter@{plataforms\_counter}}
+\index{plataforms\_counter@{plataforms\_counter}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{plataforms\_counter}{plataforms\_counter}}
+{\footnotesize\ttfamily int plataforms\+\_\+counter = 0}
+
+\mbox{\Hypertarget{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{game_8c_aa1de7a5557e9d96b83cf03f73c92163f}} 
+\index{game.c@{game.c}!scancode@{scancode}}
+\index{scancode@{scancode}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{game_8c_a440d18db810073ee49ac305782b1f2ff}\label{game_8c_a440d18db810073ee49ac305782b1f2ff}} 
+\index{game.c@{game.c}!timer\_irq@{timer\_irq}}
+\index{timer\_irq@{timer\_irq}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{timer\_irq}{timer\_irq}}
+{\footnotesize\ttfamily uint8\+\_\+t timer\+\_\+irq = 0}
+
+\mbox{\Hypertarget{game_8c_a573eca15e5986d6dd7ae53b5dab582e2}\label{game_8c_a573eca15e5986d6dd7ae53b5dab582e2}} 
+\index{game.c@{game.c}!vres@{vres}}
+\index{vres@{vres}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{vres}{vres}}
+{\footnotesize\ttfamily uint16\+\_\+t vres\hspace{0.3cm}{\ttfamily [extern]}}
+

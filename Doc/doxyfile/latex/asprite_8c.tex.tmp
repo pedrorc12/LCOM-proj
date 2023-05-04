@@ -1,0 +1,10 @@
+\hypertarget{asprite_8c}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/asprite.c File Reference}
+\label{asprite_8c}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/asprite.c@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/asprite.c}}
+{\ttfamily \#include \char`\"{}asprite.\+h\char`\"{}}\newline
+Include dependency graph for asprite.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$ \mbox{\hyperlink{group__animsprite_gace47944be7588b286408a664c060170d}{create\+\_\+asprite}} (uint8\+\_\+t no\+\_\+pic, char $\ast$pic1\mbox{[}$\,$\mbox{]},...)
+\end{DoxyCompactItemize}

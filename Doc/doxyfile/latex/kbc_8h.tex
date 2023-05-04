@@ -1,0 +1,319 @@
+\hypertarget{kbc_8h}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/kbc.h File Reference}
+\label{kbc_8h}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/kbc.h@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/kbc.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for kbc.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a311bc2b1a7bb3ee54601f2bc696962e3}{KBC\+\_\+\+IRQ1}}~1
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a1ccde68b2b6d4e45b50eef1403e10bb7}{KBC\+\_\+\+OUT\+\_\+\+BUF}}~0x60
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a0881407ab0209dcf6460eb3b60eef3d4}{KBC\+\_\+\+WRITE\+\_\+\+BUF}}~0x60
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a34b14687d83496940a236351fbbb1aea}{KBC\+\_\+\+STAT\+\_\+\+REG}}~0x64
+\item 
+\#define \mbox{\hyperlink{kbc_8h_aac9289c99cf0a693a211da6d6cb1bb65}{KBC\+\_\+\+IN\+\_\+\+BUF}}~0x64
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a69b1626cd295acf4cf3f8e284205b9db}{ESC\+\_\+\+BREAKCODE}}~0x81
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a81d2ca6759f3f3bf04556b7558aea6bc}{PARITY\+\_\+\+ERROR}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_aefc48d416c882f06edaf6d01779d4d74}{TIMEOUT\+\_\+\+ERROR}}~BIT(6)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a23f30a10aa0f1748c1a747f1fcba1fd6}{MOUSE\+\_\+\+DATA}}~BIT(5)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_ac1649d41f8ba9a02fa70ec4e600d5e4a}{KBC\+\_\+\+IBF}}~BIT(1)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a36930de8a703505c95fe133095dcfe06}{KBC\+\_\+\+OBF}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a4680153f26a3244682a2e2e01e57e318}{WRITE\+\_\+\+COMMAND\+\_\+\+BYTE}}~0x60
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a4a4c3f303810619730c9446542f4cc2a}{WRITE\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE\+\_\+\+CMD}}~0x\+D4
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a62249e384b997229a3e2ae74ade334e2}{DELAY}}~20000
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a0906a1aa0334827a08d7e49dc0ab75ea}{LEFT\+\_\+\+ARROW\+\_\+\+PRESS}}~0x\+E04B
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a16ec4b64cd730fe18fa010f98df143e1}{UP\+\_\+\+ARROW\+\_\+\+PRESS}}~0x\+E048
+\item 
+\#define \mbox{\hyperlink{kbc_8h_acdadbec9d021889351ecfd0065f20633}{DOWN\+\_\+\+ARROW\+\_\+\+PRESS}}~0x\+E050
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a78ce74ee599159797584b547653e8ebc}{RIGHT\+\_\+\+ARROW\+\_\+\+PRESS}}~0x\+E04D
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a186a27ed3e592807f549766c982bdebe}{ENTER\+\_\+\+PRESS}}~0x1C
+\item 
+\#define \mbox{\hyperlink{kbc_8h_ad98a12ee952b27b9b8ecb7621892e4c9}{MOUSE\+\_\+\+IRQ12}}~12
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a064ec583ce5b039303686ce4c64b4f3e}{MOUSE\+\_\+\+ACK}}~0x\+FA
+\item 
+\#define \mbox{\hyperlink{kbc_8h_aef4a299dedf83b6dc4765baab230affd}{MOUSE\+\_\+\+NACK}}~0x\+FE
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}{MOUSE\+\_\+\+ERROR}}~0x\+FC
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a33123b272ede508090f7d543d6b1968a}{KEYBOARD\+\_\+\+ENABLE\+\_\+\+INTERRUPT\+\_\+\+OBF}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a273372321eef8063b96317d47a3853cc}{ENABLE\+\_\+\+STREAM\+\_\+\+MODE}}~0x\+EA
+\item 
+\#define \mbox{\hyperlink{kbc_8h_a1c22608f41bd715500d0333001079a8a}{ENABLE\+\_\+\+DATA\+\_\+\+REPORT}}~0x\+F4
+\item 
+\#define \mbox{\hyperlink{kbc_8h_ad374b510092499b5961d3771abf9c66e}{DISABLE\+\_\+\+DATA\+\_\+\+REPORT}}~0x\+F5
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{kbc_8h_a86759203ec8ed160a094b1f17b0ad084}{kbc\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{kbc_8h_ad76a10e1c3df32c355a1b0ab8c015e3d}{kbc\+\_\+unsubscribe}} ()
+\item 
+int \mbox{\hyperlink{kbc_8h_a270b74b960c1dbb8abf3ef95fcafb2b0}{kbc\+\_\+write\+\_\+command}} (uint8\+\_\+t cmd)
+\item 
+int \mbox{\hyperlink{kbc_8h_a5990f5a8aaff95325b5474fd54b312fa}{kbc\+\_\+polling}} ()
+\item 
+int \mbox{\hyperlink{kbc_8h_a45dc77b0600161f8d821d5e758aa8d88}{mouse\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{kbc_8h_abb62339e13d96f9050f69a71428f8eb9}{mouse\+\_\+unsubscribe}} ()
+\item 
+int \mbox{\hyperlink{kbc_8h_a89b4d5e613f7a31d28e9bba6fd20a4e3}{write\+\_\+command\+\_\+to\+\_\+mouse}} (uint8\+\_\+t command)
+\item 
+int \mbox{\hyperlink{kbc_8h_aead48ed9617cb223b1d75e66220d8c6a}{mouse\+\_\+polling}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{kbc_8h_a62249e384b997229a3e2ae74ade334e2}\label{kbc_8h_a62249e384b997229a3e2ae74ade334e2}} 
+\index{kbc.h@{kbc.h}!DELAY@{DELAY}}
+\index{DELAY@{DELAY}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{DELAY}{DELAY}}
+{\footnotesize\ttfamily \#define DELAY~20000}
+
+\mbox{\Hypertarget{kbc_8h_ad374b510092499b5961d3771abf9c66e}\label{kbc_8h_ad374b510092499b5961d3771abf9c66e}} 
+\index{kbc.h@{kbc.h}!DISABLE\_DATA\_REPORT@{DISABLE\_DATA\_REPORT}}
+\index{DISABLE\_DATA\_REPORT@{DISABLE\_DATA\_REPORT}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{DISABLE\_DATA\_REPORT}{DISABLE\_DATA\_REPORT}}
+{\footnotesize\ttfamily \#define DISABLE\+\_\+\+DATA\+\_\+\+REPORT~0x\+F5}
+
+\mbox{\Hypertarget{kbc_8h_acdadbec9d021889351ecfd0065f20633}\label{kbc_8h_acdadbec9d021889351ecfd0065f20633}} 
+\index{kbc.h@{kbc.h}!DOWN\_ARROW\_PRESS@{DOWN\_ARROW\_PRESS}}
+\index{DOWN\_ARROW\_PRESS@{DOWN\_ARROW\_PRESS}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{DOWN\_ARROW\_PRESS}{DOWN\_ARROW\_PRESS}}
+{\footnotesize\ttfamily \#define DOWN\+\_\+\+ARROW\+\_\+\+PRESS~0x\+E050}
+
+\mbox{\Hypertarget{kbc_8h_a1c22608f41bd715500d0333001079a8a}\label{kbc_8h_a1c22608f41bd715500d0333001079a8a}} 
+\index{kbc.h@{kbc.h}!ENABLE\_DATA\_REPORT@{ENABLE\_DATA\_REPORT}}
+\index{ENABLE\_DATA\_REPORT@{ENABLE\_DATA\_REPORT}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_DATA\_REPORT}{ENABLE\_DATA\_REPORT}}
+{\footnotesize\ttfamily \#define ENABLE\+\_\+\+DATA\+\_\+\+REPORT~0x\+F4}
+
+\mbox{\Hypertarget{kbc_8h_a273372321eef8063b96317d47a3853cc}\label{kbc_8h_a273372321eef8063b96317d47a3853cc}} 
+\index{kbc.h@{kbc.h}!ENABLE\_STREAM\_MODE@{ENABLE\_STREAM\_MODE}}
+\index{ENABLE\_STREAM\_MODE@{ENABLE\_STREAM\_MODE}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_STREAM\_MODE}{ENABLE\_STREAM\_MODE}}
+{\footnotesize\ttfamily \#define ENABLE\+\_\+\+STREAM\+\_\+\+MODE~0x\+EA}
+
+\mbox{\Hypertarget{kbc_8h_a186a27ed3e592807f549766c982bdebe}\label{kbc_8h_a186a27ed3e592807f549766c982bdebe}} 
+\index{kbc.h@{kbc.h}!ENTER\_PRESS@{ENTER\_PRESS}}
+\index{ENTER\_PRESS@{ENTER\_PRESS}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{ENTER\_PRESS}{ENTER\_PRESS}}
+{\footnotesize\ttfamily \#define ENTER\+\_\+\+PRESS~0x1C}
+
+\mbox{\Hypertarget{kbc_8h_a69b1626cd295acf4cf3f8e284205b9db}\label{kbc_8h_a69b1626cd295acf4cf3f8e284205b9db}} 
+\index{kbc.h@{kbc.h}!ESC\_BREAKCODE@{ESC\_BREAKCODE}}
+\index{ESC\_BREAKCODE@{ESC\_BREAKCODE}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{ESC\_BREAKCODE}{ESC\_BREAKCODE}}
+{\footnotesize\ttfamily \#define ESC\+\_\+\+BREAKCODE~0x81}
+
+\mbox{\Hypertarget{kbc_8h_ac1649d41f8ba9a02fa70ec4e600d5e4a}\label{kbc_8h_ac1649d41f8ba9a02fa70ec4e600d5e4a}} 
+\index{kbc.h@{kbc.h}!KBC\_IBF@{KBC\_IBF}}
+\index{KBC\_IBF@{KBC\_IBF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_IBF}{KBC\_IBF}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+IBF~BIT(1)}
+
+\mbox{\Hypertarget{kbc_8h_aac9289c99cf0a693a211da6d6cb1bb65}\label{kbc_8h_aac9289c99cf0a693a211da6d6cb1bb65}} 
+\index{kbc.h@{kbc.h}!KBC\_IN\_BUF@{KBC\_IN\_BUF}}
+\index{KBC\_IN\_BUF@{KBC\_IN\_BUF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_IN\_BUF}{KBC\_IN\_BUF}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+IN\+\_\+\+BUF~0x64}
+
+\mbox{\Hypertarget{kbc_8h_a311bc2b1a7bb3ee54601f2bc696962e3}\label{kbc_8h_a311bc2b1a7bb3ee54601f2bc696962e3}} 
+\index{kbc.h@{kbc.h}!KBC\_IRQ1@{KBC\_IRQ1}}
+\index{KBC\_IRQ1@{KBC\_IRQ1}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_IRQ1}{KBC\_IRQ1}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+IRQ1~1}
+
+\mbox{\Hypertarget{kbc_8h_a36930de8a703505c95fe133095dcfe06}\label{kbc_8h_a36930de8a703505c95fe133095dcfe06}} 
+\index{kbc.h@{kbc.h}!KBC\_OBF@{KBC\_OBF}}
+\index{KBC\_OBF@{KBC\_OBF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_OBF}{KBC\_OBF}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+OBF~BIT(0)}
+
+\mbox{\Hypertarget{kbc_8h_a1ccde68b2b6d4e45b50eef1403e10bb7}\label{kbc_8h_a1ccde68b2b6d4e45b50eef1403e10bb7}} 
+\index{kbc.h@{kbc.h}!KBC\_OUT\_BUF@{KBC\_OUT\_BUF}}
+\index{KBC\_OUT\_BUF@{KBC\_OUT\_BUF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_OUT\_BUF}{KBC\_OUT\_BUF}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+OUT\+\_\+\+BUF~0x60}
+
+\mbox{\Hypertarget{kbc_8h_a34b14687d83496940a236351fbbb1aea}\label{kbc_8h_a34b14687d83496940a236351fbbb1aea}} 
+\index{kbc.h@{kbc.h}!KBC\_STAT\_REG@{KBC\_STAT\_REG}}
+\index{KBC\_STAT\_REG@{KBC\_STAT\_REG}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_STAT\_REG}{KBC\_STAT\_REG}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+STAT\+\_\+\+REG~0x64}
+
+\mbox{\Hypertarget{kbc_8h_a0881407ab0209dcf6460eb3b60eef3d4}\label{kbc_8h_a0881407ab0209dcf6460eb3b60eef3d4}} 
+\index{kbc.h@{kbc.h}!KBC\_WRITE\_BUF@{KBC\_WRITE\_BUF}}
+\index{KBC\_WRITE\_BUF@{KBC\_WRITE\_BUF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_WRITE\_BUF}{KBC\_WRITE\_BUF}}
+{\footnotesize\ttfamily \#define KBC\+\_\+\+WRITE\+\_\+\+BUF~0x60}
+
+\mbox{\Hypertarget{kbc_8h_a33123b272ede508090f7d543d6b1968a}\label{kbc_8h_a33123b272ede508090f7d543d6b1968a}} 
+\index{kbc.h@{kbc.h}!KEYBOARD\_ENABLE\_INTERRUPT\_OBF@{KEYBOARD\_ENABLE\_INTERRUPT\_OBF}}
+\index{KEYBOARD\_ENABLE\_INTERRUPT\_OBF@{KEYBOARD\_ENABLE\_INTERRUPT\_OBF}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{KEYBOARD\_ENABLE\_INTERRUPT\_OBF}{KEYBOARD\_ENABLE\_INTERRUPT\_OBF}}
+{\footnotesize\ttfamily \#define KEYBOARD\+\_\+\+ENABLE\+\_\+\+INTERRUPT\+\_\+\+OBF~BIT(0)}
+
+\mbox{\Hypertarget{kbc_8h_a0906a1aa0334827a08d7e49dc0ab75ea}\label{kbc_8h_a0906a1aa0334827a08d7e49dc0ab75ea}} 
+\index{kbc.h@{kbc.h}!LEFT\_ARROW\_PRESS@{LEFT\_ARROW\_PRESS}}
+\index{LEFT\_ARROW\_PRESS@{LEFT\_ARROW\_PRESS}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_ARROW\_PRESS}{LEFT\_ARROW\_PRESS}}
+{\footnotesize\ttfamily \#define LEFT\+\_\+\+ARROW\+\_\+\+PRESS~0x\+E04B}
+
+\mbox{\Hypertarget{kbc_8h_a064ec583ce5b039303686ce4c64b4f3e}\label{kbc_8h_a064ec583ce5b039303686ce4c64b4f3e}} 
+\index{kbc.h@{kbc.h}!MOUSE\_ACK@{MOUSE\_ACK}}
+\index{MOUSE\_ACK@{MOUSE\_ACK}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ACK}{MOUSE\_ACK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ACK~0x\+FA}
+
+\mbox{\Hypertarget{kbc_8h_a23f30a10aa0f1748c1a747f1fcba1fd6}\label{kbc_8h_a23f30a10aa0f1748c1a747f1fcba1fd6}} 
+\index{kbc.h@{kbc.h}!MOUSE\_DATA@{MOUSE\_DATA}}
+\index{MOUSE\_DATA@{MOUSE\_DATA}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_DATA}{MOUSE\_DATA}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+DATA~BIT(5)}
+
+\mbox{\Hypertarget{kbc_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}\label{kbc_8h_a75ebb9e8d0615febfa6c7c96ad48a38b}} 
+\index{kbc.h@{kbc.h}!MOUSE\_ERROR@{MOUSE\_ERROR}}
+\index{MOUSE\_ERROR@{MOUSE\_ERROR}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_ERROR}{MOUSE\_ERROR}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+ERROR~0x\+FC}
+
+\mbox{\Hypertarget{kbc_8h_ad98a12ee952b27b9b8ecb7621892e4c9}\label{kbc_8h_ad98a12ee952b27b9b8ecb7621892e4c9}} 
+\index{kbc.h@{kbc.h}!MOUSE\_IRQ12@{MOUSE\_IRQ12}}
+\index{MOUSE\_IRQ12@{MOUSE\_IRQ12}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_IRQ12}{MOUSE\_IRQ12}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+IRQ12~12}
+
+\mbox{\Hypertarget{kbc_8h_aef4a299dedf83b6dc4765baab230affd}\label{kbc_8h_aef4a299dedf83b6dc4765baab230affd}} 
+\index{kbc.h@{kbc.h}!MOUSE\_NACK@{MOUSE\_NACK}}
+\index{MOUSE\_NACK@{MOUSE\_NACK}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{MOUSE\_NACK}{MOUSE\_NACK}}
+{\footnotesize\ttfamily \#define MOUSE\+\_\+\+NACK~0x\+FE}
+
+\mbox{\Hypertarget{kbc_8h_a81d2ca6759f3f3bf04556b7558aea6bc}\label{kbc_8h_a81d2ca6759f3f3bf04556b7558aea6bc}} 
+\index{kbc.h@{kbc.h}!PARITY\_ERROR@{PARITY\_ERROR}}
+\index{PARITY\_ERROR@{PARITY\_ERROR}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{PARITY\_ERROR}{PARITY\_ERROR}}
+{\footnotesize\ttfamily \#define PARITY\+\_\+\+ERROR~BIT(7)}
+
+\mbox{\Hypertarget{kbc_8h_a78ce74ee599159797584b547653e8ebc}\label{kbc_8h_a78ce74ee599159797584b547653e8ebc}} 
+\index{kbc.h@{kbc.h}!RIGHT\_ARROW\_PRESS@{RIGHT\_ARROW\_PRESS}}
+\index{RIGHT\_ARROW\_PRESS@{RIGHT\_ARROW\_PRESS}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_ARROW\_PRESS}{RIGHT\_ARROW\_PRESS}}
+{\footnotesize\ttfamily \#define RIGHT\+\_\+\+ARROW\+\_\+\+PRESS~0x\+E04D}
+
+\mbox{\Hypertarget{kbc_8h_aefc48d416c882f06edaf6d01779d4d74}\label{kbc_8h_aefc48d416c882f06edaf6d01779d4d74}} 
+\index{kbc.h@{kbc.h}!TIMEOUT\_ERROR@{TIMEOUT\_ERROR}}
+\index{TIMEOUT\_ERROR@{TIMEOUT\_ERROR}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_ERROR}{TIMEOUT\_ERROR}}
+{\footnotesize\ttfamily \#define TIMEOUT\+\_\+\+ERROR~BIT(6)}
+
+\mbox{\Hypertarget{kbc_8h_a16ec4b64cd730fe18fa010f98df143e1}\label{kbc_8h_a16ec4b64cd730fe18fa010f98df143e1}} 
+\index{kbc.h@{kbc.h}!UP\_ARROW\_PRESS@{UP\_ARROW\_PRESS}}
+\index{UP\_ARROW\_PRESS@{UP\_ARROW\_PRESS}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{UP\_ARROW\_PRESS}{UP\_ARROW\_PRESS}}
+{\footnotesize\ttfamily \#define UP\+\_\+\+ARROW\+\_\+\+PRESS~0x\+E048}
+
+\mbox{\Hypertarget{kbc_8h_a4a4c3f303810619730c9446542f4cc2a}\label{kbc_8h_a4a4c3f303810619730c9446542f4cc2a}} 
+\index{kbc.h@{kbc.h}!WRITE\_BYTE\_TO\_MOUSE\_CMD@{WRITE\_BYTE\_TO\_MOUSE\_CMD}}
+\index{WRITE\_BYTE\_TO\_MOUSE\_CMD@{WRITE\_BYTE\_TO\_MOUSE\_CMD}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_BYTE\_TO\_MOUSE\_CMD}{WRITE\_BYTE\_TO\_MOUSE\_CMD}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+BYTE\+\_\+\+TO\+\_\+\+MOUSE\+\_\+\+CMD~0x\+D4}
+
+\mbox{\Hypertarget{kbc_8h_a4680153f26a3244682a2e2e01e57e318}\label{kbc_8h_a4680153f26a3244682a2e2e01e57e318}} 
+\index{kbc.h@{kbc.h}!WRITE\_COMMAND\_BYTE@{WRITE\_COMMAND\_BYTE}}
+\index{WRITE\_COMMAND\_BYTE@{WRITE\_COMMAND\_BYTE}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_COMMAND\_BYTE}{WRITE\_COMMAND\_BYTE}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+COMMAND\+\_\+\+BYTE~0x60}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc_8h_a5990f5a8aaff95325b5474fd54b312fa}\label{kbc_8h_a5990f5a8aaff95325b5474fd54b312fa}} 
+\index{kbc.h@{kbc.h}!kbc\_polling@{kbc\_polling}}
+\index{kbc\_polling@{kbc\_polling}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_polling()}{kbc\_polling()}}
+{\footnotesize\ttfamily int kbc\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performe a poll to the KBC reading it\textquotesingle{}s Output buffer \mbox{\Hypertarget{kbc_8h_a86759203ec8ed160a094b1f17b0ad084}\label{kbc_8h_a86759203ec8ed160a094b1f17b0ad084}} 
+\index{kbc.h@{kbc.h}!kbc\_subscribe@{kbc\_subscribe}}
+\index{kbc\_subscribe@{kbc\_subscribe}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_subscribe()}{kbc\_subscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Subscribe to the KBC IRQ line 
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number to ben used in the driver receive loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8h_ad76a10e1c3df32c355a1b0ab8c015e3d}\label{kbc_8h_ad76a10e1c3df32c355a1b0ab8c015e3d}} 
+\index{kbc.h@{kbc.h}!kbc\_unsubscribe@{kbc\_unsubscribe}}
+\index{kbc\_unsubscribe@{kbc\_unsubscribe}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_unsubscribe()}{kbc\_unsubscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribe to the KBC IRQ line \mbox{\Hypertarget{kbc_8h_a270b74b960c1dbb8abf3ef95fcafb2b0}\label{kbc_8h_a270b74b960c1dbb8abf3ef95fcafb2b0}} 
+\index{kbc.h@{kbc.h}!kbc\_write\_command@{kbc\_write\_command}}
+\index{kbc\_write\_command@{kbc\_write\_command}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{kbc\_write\_command()}{kbc\_write\_command()}}
+{\footnotesize\ttfamily int kbc\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+Write a command to the KBC 
+\begin{DoxyParams}{Parameters}
+{\em cmd} & commad to write to the KBC \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8h_aead48ed9617cb223b1d75e66220d8c6a}\label{kbc_8h_aead48ed9617cb223b1d75e66220d8c6a}} 
+\index{kbc.h@{kbc.h}!mouse\_polling@{mouse\_polling}}
+\index{mouse\_polling@{mouse\_polling}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_polling()}{mouse\_polling()}}
+{\footnotesize\ttfamily int mouse\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performe a poll to tht KBC reading it output buffer if there is mouse information \mbox{\Hypertarget{kbc_8h_a45dc77b0600161f8d821d5e758aa8d88}\label{kbc_8h_a45dc77b0600161f8d821d5e758aa8d88}} 
+\index{kbc.h@{kbc.h}!mouse\_subscribe@{mouse\_subscribe}}
+\index{mouse\_subscribe@{mouse\_subscribe}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe()}{mouse\_subscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Subscrite to the mouse IRQ line 
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number to be used in the driver receiveloop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8h_abb62339e13d96f9050f69a71428f8eb9}\label{kbc_8h_abb62339e13d96f9050f69a71428f8eb9}} 
+\index{kbc.h@{kbc.h}!mouse\_unsubscribe@{mouse\_unsubscribe}}
+\index{mouse\_unsubscribe@{mouse\_unsubscribe}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribe to the mouse \mbox{\Hypertarget{kbc_8h_a89b4d5e613f7a31d28e9bba6fd20a4e3}\label{kbc_8h_a89b4d5e613f7a31d28e9bba6fd20a4e3}} 
+\index{kbc.h@{kbc.h}!write\_command\_to\_mouse@{write\_command\_to\_mouse}}
+\index{write\_command\_to\_mouse@{write\_command\_to\_mouse}!kbc.h@{kbc.h}}
+\doxysubsubsection{\texorpdfstring{write\_command\_to\_mouse()}{write\_command\_to\_mouse()}}
+{\footnotesize\ttfamily int write\+\_\+command\+\_\+to\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+Send a command direct to the mouse 
+\begin{DoxyParams}{Parameters}
+{\em command} & command to be sent to the mouse \\
+\hline
+\end{DoxyParams}

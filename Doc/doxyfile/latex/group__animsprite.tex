@@ -1,0 +1,44 @@
+\hypertarget{group__animsprite}{}\doxysection{Anim\+Sprite}
+\label{group__animsprite}\index{AnimSprite@{AnimSprite}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$ \mbox{\hyperlink{group__animsprite_gace47944be7588b286408a664c060170d}{create\+\_\+asprite}} (uint8\+\_\+t no\+\_\+pic, char $\ast$pic1\mbox{[}$\,$\mbox{]},...)
+\item 
+int \mbox{\hyperlink{group__animsprite_ga3018ad00909746affb3f6f1d33a871bb}{animate\+\_\+asprite}} (\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$fig)
+\item 
+void \mbox{\hyperlink{group__animsprite_gaef4a92ef9c24a83ef6dc440d46b22e32}{destroy\+\_\+asprite}} (\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$fig, char $\ast$base)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Joao Cardoso (\href{mailto:jcard@fe.up.pt}{\texttt{ jcard@fe.\+up.\+pt}}) ???? Added by \href{mailto:pfs@fe.up.pt}{\texttt{ pfs@fe.\+up.\+pt}}
+\end{DoxyAuthor}
+Animated \mbox{\hyperlink{struct_sprite}{Sprite}} related functions 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__animsprite_ga3018ad00909746affb3f6f1d33a871bb}\label{group__animsprite_ga3018ad00909746affb3f6f1d33a871bb}} 
+\index{AnimSprite@{AnimSprite}!animate\_asprite@{animate\_asprite}}
+\index{animate\_asprite@{animate\_asprite}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{animate\_asprite()}{animate\_asprite()}}
+{\footnotesize\ttfamily int animate\+\_\+asprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$}]{fig }\end{DoxyParamCaption})}
+
+Animate an Animated \mbox{\hyperlink{struct_sprite}{Sprite}} \mbox{\Hypertarget{group__animsprite_gace47944be7588b286408a664c060170d}\label{group__animsprite_gace47944be7588b286408a664c060170d}} 
+\index{AnimSprite@{AnimSprite}!create\_asprite@{create\_asprite}}
+\index{create\_asprite@{create\_asprite}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{create\_asprite()}{create\_asprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}}$\ast$ create\+\_\+asprite (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{no\+\_\+pic,  }\item[{char $\ast$}]{pic1\mbox{[}$\,$\mbox{]},  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Create an Animated \mbox{\hyperlink{struct_sprite}{Sprite}} from multiple pixmaps At least one pixmap must be specified. \mbox{\Hypertarget{group__animsprite_gaef4a92ef9c24a83ef6dc440d46b22e32}\label{group__animsprite_gaef4a92ef9c24a83ef6dc440d46b22e32}} 
+\index{AnimSprite@{AnimSprite}!destroy\_asprite@{destroy\_asprite}}
+\index{destroy\_asprite@{destroy\_asprite}!AnimSprite@{AnimSprite}}
+\doxysubsubsection{\texorpdfstring{destroy\_asprite()}{destroy\_asprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+asprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_anim_sprite}{Anim\+Sprite}} $\ast$}]{fig,  }\item[{char $\ast$}]{base }\end{DoxyParamCaption})}
+
+Destroy an Animated \mbox{\hyperlink{struct_sprite}{Sprite}} from video memoty and release all resources allocated. 

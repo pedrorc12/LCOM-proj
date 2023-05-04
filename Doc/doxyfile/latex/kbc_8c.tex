@@ -1,0 +1,174 @@
+\hypertarget{kbc_8c}{}\doxysection{C\+:/\+Users/pedro/\+One\+Drive/\+Documentos/\+LCOM/shared/proj/kbc.c File Reference}
+\label{kbc_8c}\index{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/kbc.c@{C:/Users/pedro/OneDrive/Documentos/LCOM/shared/proj/kbc.c}}
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+c\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{kbc_8c_a86759203ec8ed160a094b1f17b0ad084}{kbc\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{kbc_8c_ad76a10e1c3df32c355a1b0ab8c015e3d}{kbc\+\_\+unsubscribe}} ()
+\item 
+int \mbox{\hyperlink{kbc_8c_a45dc77b0600161f8d821d5e758aa8d88}{mouse\+\_\+subscribe}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+int \mbox{\hyperlink{kbc_8c_abb62339e13d96f9050f69a71428f8eb9}{mouse\+\_\+unsubscribe}} ()
+\item 
+void() \mbox{\hyperlink{kbc_8c_aea970a154161a35f6894898a092ed70a}{kbc\+\_\+ih}} ()
+\item 
+void() \mbox{\hyperlink{kbc_8c_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\item 
+int \mbox{\hyperlink{kbc_8c_a5990f5a8aaff95325b5474fd54b312fa}{kbc\+\_\+polling}} ()
+\item 
+int \mbox{\hyperlink{kbc_8c_aead48ed9617cb223b1d75e66220d8c6a}{mouse\+\_\+polling}} ()
+\item 
+int \mbox{\hyperlink{kbc_8c_a270b74b960c1dbb8abf3ef95fcafb2b0}{kbc\+\_\+write\+\_\+command}} (uint8\+\_\+t cmd)
+\item 
+int \mbox{\hyperlink{kbc_8c_a89b4d5e613f7a31d28e9bba6fd20a4e3}{write\+\_\+command\+\_\+to\+\_\+mouse}} (uint8\+\_\+t command)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{kbc_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{kbc_8c_a45e49c34b3a8282860d4d365509479f6}{mouse\+\_\+package}} = 0
+\item 
+int \mbox{\hyperlink{kbc_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = 0
+\item 
+int \mbox{\hyperlink{kbc_8c_a37cad7cad93664f8a1ed1b0258fe958b}{mouse\+\_\+hook\+\_\+id}} = 0
+\item 
+bool \mbox{\hyperlink{kbc_8c_a526bdf64db87f19a07d2e038688cb24b}{kbc\+\_\+error\+\_\+status}} = true
+\item 
+bool \mbox{\hyperlink{kbc_8c_a02d174063ace3837ec1a32ffd973cb19}{two\+\_\+bytes\+\_\+scancode}} = false
+\item 
+bool \mbox{\hyperlink{kbc_8c_ab16a3e13988a41e497c1b3894acee0a4}{mouse\+\_\+error}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kbc_8c_aea970a154161a35f6894898a092ed70a}\label{kbc_8c_aea970a154161a35f6894898a092ed70a}} 
+\index{kbc.c@{kbc.c}!kbc\_ih@{kbc\_ih}}
+\index{kbc\_ih@{kbc\_ih}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_ih()}{kbc\_ih()}}
+{\footnotesize\ttfamily void() kbc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{kbc_8c_a5990f5a8aaff95325b5474fd54b312fa}\label{kbc_8c_a5990f5a8aaff95325b5474fd54b312fa}} 
+\index{kbc.c@{kbc.c}!kbc\_polling@{kbc\_polling}}
+\index{kbc\_polling@{kbc\_polling}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_polling()}{kbc\_polling()}}
+{\footnotesize\ttfamily int kbc\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performe a poll to the KBC reading it\textquotesingle{}s Output buffer \mbox{\Hypertarget{kbc_8c_a86759203ec8ed160a094b1f17b0ad084}\label{kbc_8c_a86759203ec8ed160a094b1f17b0ad084}} 
+\index{kbc.c@{kbc.c}!kbc\_subscribe@{kbc\_subscribe}}
+\index{kbc\_subscribe@{kbc\_subscribe}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_subscribe()}{kbc\_subscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Subscribe to the KBC IRQ line 
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number to ben used in the driver receive loop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8c_ad76a10e1c3df32c355a1b0ab8c015e3d}\label{kbc_8c_ad76a10e1c3df32c355a1b0ab8c015e3d}} 
+\index{kbc.c@{kbc.c}!kbc\_unsubscribe@{kbc\_unsubscribe}}
+\index{kbc\_unsubscribe@{kbc\_unsubscribe}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_unsubscribe()}{kbc\_unsubscribe()}}
+{\footnotesize\ttfamily int kbc\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribe to the KBC IRQ line \mbox{\Hypertarget{kbc_8c_a270b74b960c1dbb8abf3ef95fcafb2b0}\label{kbc_8c_a270b74b960c1dbb8abf3ef95fcafb2b0}} 
+\index{kbc.c@{kbc.c}!kbc\_write\_command@{kbc\_write\_command}}
+\index{kbc\_write\_command@{kbc\_write\_command}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_write\_command()}{kbc\_write\_command()}}
+{\footnotesize\ttfamily int kbc\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+Write a command to the KBC 
+\begin{DoxyParams}{Parameters}
+{\em cmd} & commad to write to the KBC \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8c_a210374b50462acdedab00df64d5cea3c}\label{kbc_8c_a210374b50462acdedab00df64d5cea3c}} 
+\index{kbc.c@{kbc.c}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{kbc_8c_aead48ed9617cb223b1d75e66220d8c6a}\label{kbc_8c_aead48ed9617cb223b1d75e66220d8c6a}} 
+\index{kbc.c@{kbc.c}!mouse\_polling@{mouse\_polling}}
+\index{mouse\_polling@{mouse\_polling}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_polling()}{mouse\_polling()}}
+{\footnotesize\ttfamily int mouse\+\_\+polling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Performe a poll to tht KBC reading it output buffer if there is mouse information \mbox{\Hypertarget{kbc_8c_a45dc77b0600161f8d821d5e758aa8d88}\label{kbc_8c_a45dc77b0600161f8d821d5e758aa8d88}} 
+\index{kbc.c@{kbc.c}!mouse\_subscribe@{mouse\_subscribe}}
+\index{mouse\_subscribe@{mouse\_subscribe}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe()}{mouse\_subscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Subscrite to the mouse IRQ line 
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number to be used in the driver receiveloop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{kbc_8c_abb62339e13d96f9050f69a71428f8eb9}\label{kbc_8c_abb62339e13d96f9050f69a71428f8eb9}} 
+\index{kbc.c@{kbc.c}!mouse\_unsubscribe@{mouse\_unsubscribe}}
+\index{mouse\_unsubscribe@{mouse\_unsubscribe}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribe to the mouse \mbox{\Hypertarget{kbc_8c_a89b4d5e613f7a31d28e9bba6fd20a4e3}\label{kbc_8c_a89b4d5e613f7a31d28e9bba6fd20a4e3}} 
+\index{kbc.c@{kbc.c}!write\_command\_to\_mouse@{write\_command\_to\_mouse}}
+\index{write\_command\_to\_mouse@{write\_command\_to\_mouse}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{write\_command\_to\_mouse()}{write\_command\_to\_mouse()}}
+{\footnotesize\ttfamily int write\+\_\+command\+\_\+to\+\_\+mouse (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+Send a command direct to the mouse 
+\begin{DoxyParams}{Parameters}
+{\em command} & command to be sent to the mouse \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{kbc_8c_a96f78a87d064e47d627d222f67a8d012}\label{kbc_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{kbc.c@{kbc.c}!hook\_id@{hook\_id}}
+\index{hook\_id@{hook\_id}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id}{hook\_id}}
+{\footnotesize\ttfamily int hook\+\_\+id = 0}
+
+\mbox{\Hypertarget{kbc_8c_a526bdf64db87f19a07d2e038688cb24b}\label{kbc_8c_a526bdf64db87f19a07d2e038688cb24b}} 
+\index{kbc.c@{kbc.c}!kbc\_error\_status@{kbc\_error\_status}}
+\index{kbc\_error\_status@{kbc\_error\_status}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{kbc\_error\_status}{kbc\_error\_status}}
+{\footnotesize\ttfamily bool kbc\+\_\+error\+\_\+status = true}
+
+\mbox{\Hypertarget{kbc_8c_ab16a3e13988a41e497c1b3894acee0a4}\label{kbc_8c_ab16a3e13988a41e497c1b3894acee0a4}} 
+\index{kbc.c@{kbc.c}!mouse\_error@{mouse\_error}}
+\index{mouse\_error@{mouse\_error}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_error}{mouse\_error}}
+{\footnotesize\ttfamily bool mouse\+\_\+error = false}
+
+\mbox{\Hypertarget{kbc_8c_a37cad7cad93664f8a1ed1b0258fe958b}\label{kbc_8c_a37cad7cad93664f8a1ed1b0258fe958b}} 
+\index{kbc.c@{kbc.c}!mouse\_hook\_id@{mouse\_hook\_id}}
+\index{mouse\_hook\_id@{mouse\_hook\_id}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_hook\_id}{mouse\_hook\_id}}
+{\footnotesize\ttfamily int mouse\+\_\+hook\+\_\+id = 0}
+
+\mbox{\Hypertarget{kbc_8c_a45e49c34b3a8282860d4d365509479f6}\label{kbc_8c_a45e49c34b3a8282860d4d365509479f6}} 
+\index{kbc.c@{kbc.c}!mouse\_package@{mouse\_package}}
+\index{mouse\_package@{mouse\_package}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_package}{mouse\_package}}
+{\footnotesize\ttfamily uint8\+\_\+t mouse\+\_\+package = 0}
+
+\mbox{\Hypertarget{kbc_8c_aa1de7a5557e9d96b83cf03f73c92163f}\label{kbc_8c_aa1de7a5557e9d96b83cf03f73c92163f}} 
+\index{kbc.c@{kbc.c}!scancode@{scancode}}
+\index{scancode@{scancode}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily uint8\+\_\+t scancode = 0}
+
+\mbox{\Hypertarget{kbc_8c_a02d174063ace3837ec1a32ffd973cb19}\label{kbc_8c_a02d174063ace3837ec1a32ffd973cb19}} 
+\index{kbc.c@{kbc.c}!two\_bytes\_scancode@{two\_bytes\_scancode}}
+\index{two\_bytes\_scancode@{two\_bytes\_scancode}!kbc.c@{kbc.c}}
+\doxysubsubsection{\texorpdfstring{two\_bytes\_scancode}{two\_bytes\_scancode}}
+{\footnotesize\ttfamily bool two\+\_\+bytes\+\_\+scancode = false}
+
